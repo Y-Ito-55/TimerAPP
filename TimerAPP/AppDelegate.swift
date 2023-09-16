@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -25,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+            print("did recieve")
             if response.actionIdentifier == "returnAction" {
                 // 現在のViewControllerを取得して、alarmEnded関数を呼び出す
                 if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
@@ -44,7 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             completionHandler()
         // 通知が前面で表示されるためのメソッド
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-            completionHandler([.banner, .sound])
+        print("willPresent notification")
+        completionHandler([.banner, .sound])
         }
     }
 }

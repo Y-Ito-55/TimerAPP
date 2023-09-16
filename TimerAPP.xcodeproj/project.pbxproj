@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7B4F532AB5A3A500F6D2B7 /* uzura.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B4F522AB5A3A500F6D2B7 /* uzura.ttf */; };
 		8BB228742AB481FD00F90E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB228732AB481FD00F90E76 /* AppDelegate.swift */; };
 		8BB228762AB481FD00F90E76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB228752AB481FD00F90E76 /* SceneDelegate.swift */; };
 		8BB228782AB481FD00F90E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB228772AB481FD00F90E76 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B7B4F522AB5A3A500F6D2B7 /* uzura.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uzura.ttf; sourceTree = "<group>"; };
 		8BB228702AB481FD00F90E76 /* TimerAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB228732AB481FD00F90E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB228752AB481FD00F90E76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		8BB228672AB481FD00F90E76 = {
 			isa = PBXGroup;
 			children = (
+				8B7B4F522AB5A3A500F6D2B7 /* uzura.ttf */,
 				8BB228722AB481FD00F90E76 /* TimerAPP */,
 				8BB228712AB481FD00F90E76 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7B4F532AB5A3A500F6D2B7 /* uzura.ttf in Resources */,
 				8BB228802AB481FF00F90E76 /* LaunchScreen.storyboard in Resources */,
 				8BB2287D2AB481FF00F90E76 /* Assets.xcassets in Resources */,
 				8BB2287B2AB481FD00F90E76 /* Main.storyboard in Resources */,
