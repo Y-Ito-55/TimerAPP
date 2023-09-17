@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
     
-    let alarmIntervals = [0, 1, 3, 5, 10, 30] + Array(stride(from: 60, through: 720, by: 30))
+    let alarmIntervals = [1, 3, 5, 10, 30] + Array(stride(from: 60, through: 720, by: 30))
     var selectedInterval = 1
     
     override func viewDidLoad() {
@@ -96,7 +96,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func setupHaikuLabel() {
         haikuLabel.numberOfLines = 3
         haikuLabel.textAlignment = .center
-        haikuLabel.font = UIFont(name: "uzurafont.ttf", size: 20)
+        haikuLabel.font = UIFont(name: "Zapfino", size: 18)
         view.addSubview(haikuLabel)
     }
     
@@ -172,9 +172,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func setRandomHaiku() {
-        let uppers = ["風が伝える", "星が瞬く", "花びらが舞う", "遠くの雲", "朝のきらめき"]
-        let middles = ["未来の囁き", "運命の糸", "空を駆ける", "まだ見ぬ景色", "流れる時の中で"]
-        let lowers = ["心の奥深く", "指先に触れる", "夢と現の境界", "希望の彼方へ", "瞳を閉じて感じる"]
+        let uppers = ["Sun kisses the sky,", "Morning dew glitters,", "Birds sing melodies,", "First rays, eyes gleam,", "Sun paints the world,"]
+        let middles = ["Daydreams bloom,", "New tales begin,", "Stories start,", "Dreams draw near,", "New chapters shared,"]
+        let lowers = ["Secrets whisper.", "Love's first hint.", "Day's note unfolds.", "Day's note unfolds.", "Love sparkles."]
         
         let upper = uppers.randomElement()!
         let middle = middles.randomElement()!
